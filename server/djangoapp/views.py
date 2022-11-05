@@ -106,7 +106,6 @@ def get_dealerships(request):
     if request.method == "GET":
         context={}
         url = "https://eu-de.functions.appdomain.cloud/api/v1/web/IBM-Lab_CLI/dealership-package/get-dealership"
-        apikey="Uc1J05vYEQcFigh7CXCT9-HhgJtYnk-akIFxchmqLNeC"
         # Get dealers from the URL
         dealerships = get_dealers_from_cf(url)
         # Concat all dealer's short name
